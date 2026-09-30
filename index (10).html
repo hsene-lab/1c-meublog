@@ -4,9 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bloom House</title>
-        <style>
-           
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
@@ -24,6 +22,8 @@
                 <h1>Apresentação</h1>
                 <p>Você sabe qual é a sua flor favorita? Algumas representam amor, outras amizade, esperança ou renovação. Neste espaço, vamos descobrir juntos os significados e encantos escondidos em cada pétala.</p>
                
+                <p class="artigofonte">Fonte: Editorial Bloom House</p>
+
                 <div class="reacoes">
                     <button>🩷 <span>0</span></button>
                     <button>🌻 <span>0</span></button>
@@ -31,13 +31,38 @@
                     <button>🌱 <span>0</span></button>
                 </div>
             </article>
-
             <article class="post">
-        
-
                 <h1>Dicas de Cultivo: Luz e Água</h1>
                 <p>Cada espécie possui necessidades únicas de iluminação e rega. Enquanto os girassóis amam luz direta durante o dia todo, outras plantas preferem a luz indireta para proteger suas pétalas delicadas. Fique atento às folhas para entender o que sua planta precisa!</p>
                
+                <p class="artigofonte">Fonte: Manual de Jardinagem Prática</p>
+
+                <div class="reacoes">
+                    <button>🩷 <span>0</span></button>
+                    <button>🌻 <span>0</span></button>
+                    <button>✨ <span>0</span></button>
+                    <button>🌱 <span>0</span></button>
+                </div>
+            </article>
+            <article class="post">
+                <h1>O Significado das Cores nas Flores</h1>
+                <p>As cores das flores carregam sentimentos e mensagens especiais. As vermelhas simbolizam amor e paixão, as amarelas transmitem alegria e amizade, enquanto as brancas representam paz e renovação. Qual cor combina mais com o seu momento atual?</p>
+               
+                <p class="artigofonte">Fonte: Guia de Simbologia Floral e Botânica</p>
+
+                <div class="reacoes">
+                    <button>🩷 <span>0</span></button>
+                    <button>🌻 <span>0</span></button>
+                    <button>✨ <span>0</span></button>
+                    <button>🌱 <span>0</span></button>
+                </div>
+            </article>
+            <article class="post">
+                <h1>Plantas Ideais para Ambientes Internos</h1>
+                <p>Quer trazer um pouco de natureza para dentro de casa? Espécies como a Espada-de-São-Jorge, a Jiboia e o Lírio-da-Paz adaptam-se super bem a apartamentos e locais com pouca luz solar direta. Além de lindas, ajudam a purificar o ar!</p>
+               
+                <p class="artigofonte">Fonte: Revista Casa & Jardinagem</p>
+
                 <div class="reacoes">
                     <button>🩷 <span>0</span></button>
                     <button>🌻 <span>0</span></button>
@@ -46,25 +71,7 @@
                 </div>
             </article>
         </main>
+
+        <script src="script.js"></script>
     </body>
-
-    <script>
-        const botoes = document.querySelectorAll("button");
-
-        botoes.forEach(function(botao) {
-            let curtiu = false;
-            botao.addEventListener("click", function botaoClicado() {
-                console.log("fui clicado");
-                let texto = botao.querySelector("span");
-                
-                if (curtiu === false){
-                  texto.textContent++;
-                  curtiu = true; 
-                } else{
-                    texto.textContent--;
-                    curtiu = false;
-                }
-            });
-        });
-    </script>
 </html>
