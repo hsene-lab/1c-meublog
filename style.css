@@ -1,9 +1,27 @@
+ :root{
+    --Cor-primaria: rgb(189, 63, 63);
+    --Cor-secundaria: rgb(198, 83, 83);
+    --Cor-fundo: #FFFFFF;
+    --Cor-texto: rgb(245, 120, 120);
+    --Cor-contraste:#fec6c6;
+    --Cor-botao:#fce5e5;
+ }
+
+ .tema-esscuro {
+    --Cor-primaria: rgb(226, 178, 178);
+    --Cor-secundaria: rgb(197, 134, 134);
+    --Cor-fundo: #000000;
+    --Cor-texto: rgb(238, 176, 176);
+    --Cor-contraste:#aa4b4b;
+    --Cor-botao:#ae3c3c;
+
+ }
  body {
     max-width: 100vw;
  }
  header {
-                background-color: rgb(189, 63, 63);
-                color: #FFFFFF;
+                background-color: var(--Cor-primaria);
+                color: var(--Cor-fundo)
                 text-align: center;
                 margin: 0 auto;
                 padding: 16px;
@@ -11,7 +29,7 @@
             }
             main {
                 padding: 16px;
-                color: rgb(189, 63, 63);
+                color: var(--Cor-primaria)
                 margin: 0 auto;
                 display: flex; 
                 flex-wrap: wrap;
@@ -19,7 +37,7 @@
            
             article {
                 display: flex;
-                border: 1px solid #fec6c6;
+                border: 1px solid var(--Cor-contraste)
                 margin: 16px;
                 gap: 16px;
                 padding: 16px; 
@@ -43,8 +61,8 @@
                 cursor: pointer;
                 padding: 8px 14px;
                 font-size: 16px;
-                background-color: white;
-                color: rgb(189, 63, 63);
+                background-color: var(--Cor-fundo)
+                color: var(--Cor-contraste)
                 font-weight: bold;
                 transition: transform 0.1s ease;
             }
