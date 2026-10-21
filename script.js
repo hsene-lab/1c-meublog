@@ -19,20 +19,14 @@ botoesReacao.forEach(function (botao) {
 });
 
 
-const btnTemaEscuro = document.querySelector(".btn-tema-escuro");
+const btnTemaEscuro = document.querySelector(".btn-tema, .btn-tema-escuro");
 
 if (btnTemaEscuro) {
     btnTemaEscuro.addEventListener("click", mudaTema);
 }
 
 function mudaTema() {
-    const corpoPagina = document.body;
-
-    if (corpoPagina.classList.contains("tema-escuro")) {
-        corpoPagina.classList.remove("tema-escuro");
-    } else {
-        corpoPagina.classList.add("tema-escuro");
-    }
+    document.body.classList.toggle("tema-escuro");
 }
 
 
@@ -40,6 +34,9 @@ const btnVoltarTopo = document.querySelector(".btn-voltar-topo");
 
 if (btnVoltarTopo) {
     btnVoltarTopo.addEventListener("click", function () {
-        window.scrollTo(0, 0);
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     });
 }
